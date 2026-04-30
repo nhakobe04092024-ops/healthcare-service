@@ -1,0 +1,25 @@
+services:
+  # Production build — multi-stage, served by `serve` on :3000
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hcmc-healthcare-map:latest
+    container_name: hcmc-healthcare-map
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  # Dev server with hot-reload on :5173
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: hcmc-healthcare-map:dev
+    container_name: hcmc-healthcare-map-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    profiles: ["dev"]

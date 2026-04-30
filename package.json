@@ -1,0 +1,31 @@
+{
+  "name": "hcmc-healthcare-map",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Interactive market map of HCMC private healthcare facilities (React + Leaflet + OpenStreetMap).",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "geocode": "node scripts/geocode-places.js",
+    "geocode:dry": "node scripts/geocode-places.js --dry-run",
+    "geocode:force": "node scripts/geocode-places.js --force",
+    "geocode:osm": "node scripts/geocode-nominatim.js",
+    "geocode:osm:dry": "node scripts/geocode-nominatim.js --dry-run",
+    "geocode:osm:force": "node scripts/geocode-nominatim.js --force",
+    "geocode:liq": "node scripts/geocode-locationiq.js",
+    "geocode:liq:dry": "node scripts/geocode-locationiq.js --dry-run",
+    "geocode:liq:force": "node scripts/geocode-locationiq.js --force"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.10"
+  }
+}

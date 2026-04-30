@@ -1,0 +1,11 @@
+node_modules
+dist
+.vite
+.DS_Store
+*.log
+.env
+.env.local
+src/data/*.backup-*.json
+scripts/geocode-report.json
+
+.vercel

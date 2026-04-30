@@ -1,0 +1,822 @@
+{
+  "project_name": "Expanded HCMC Private Healthcare Landscape",
+  "version": "v6_estella_merged_into_hoan_my_asset",
+  "data_note": "C01 Hanh Phuc Estella Clinic has been merged into the Hoan My asset layer as a strategic outpatient clinic asset. Vu Anh International General Hospital (M21) was removed because it is closed. S09 My Duc Tan Binh Hospital was removed because it duplicated S07. Active map contains 37 facilities. [2026-04-30] 36 facilities geocoded via LocationIQ.",
+  "center": {
+    "lat": 10.83,
+    "lng": 106.72,
+    "zoom": 10
+  },
+  "summary": {
+    "total_facilities": 37,
+    "hospital_facilities": 36,
+    "strategic_clinic_assets": 1,
+    "hoan_my_hanh_phuc_thuan_my_assets_total": 7,
+    "hoan_my_hanh_phuc_thuan_my_hospital_assets": 6,
+    "hoan_my_hanh_phuc_strategic_clinic_assets": 1,
+    "tam_tri_assets": 1,
+    "phuong_chau_phuong_nam_assets": 1,
+    "private_multi_specialty_competitors": 20,
+    "private_specialty_competitors": 8,
+    "removed_closed_facilities": 1,
+    "removed_duplicate_facilities": 1
+  },
+  "marker_styles": {
+    "Hoan My asset": {
+      "shape": "circle",
+      "color": "#1E5CCB",
+      "text_color": "#FFFFFF"
+    },
+    "Tam Tri asset": {
+      "shape": "rounded_square",
+      "color": "#2057D5",
+      "text_color": "#FFFFFF"
+    },
+    "Phuong Chau asset": {
+      "shape": "hexagon",
+      "color": "#7B3FC6",
+      "text_color": "#FFFFFF"
+    },
+    "Private multi-specialty competitor": {
+      "shape": "diamond",
+      "color": "#F28C28",
+      "text_color": "#FFFFFF"
+    },
+    "Private specialty competitor": {
+      "shape": "triangle",
+      "color": "#E5391A",
+      "text_color": "#FFFFFF"
+    }
+  },
+  "facilities": [
+    {
+      "code": "H01",
+      "name": "Hoan My Sai Gon Hospital",
+      "area": "Phu Nhuan / Phan Xich Long corridor",
+      "region": "Old HCMC",
+      "ownership_group": "Hoan My",
+      "map_layer": "Hoan My asset",
+      "category": "Multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty"
+      ],
+      "lat": 10.797194,
+      "lng": 106.65894,
+      "real_address": "60-60A Phan Xích Long, Phường Cầu Kiệu, TP. Hồ Chí Minh",
+      "address_hint": "60-60A Phan Xích Long, Phường Cầu Kiệu, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "H02",
+      "name": "Hoan My Thu Duc Hospital",
+      "area": "Thu Duc / East HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Hoan My",
+      "map_layer": "Hoan My asset",
+      "category": "Multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty"
+      ],
+      "lat": 10.886906,
+      "lng": 106.774039,
+      "real_address": "241 Hoàng Cầm, Phường Linh Xuân, TP. Hồ Chí Minh",
+      "address_hint": "241 Hoàng Cầm, Phường Linh Xuân, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "H03",
+      "name": "Hanh Phuc International Hospital",
+      "area": "Binh Duong Boulevard / Binh Hoa gateway",
+      "region": "Former Binh Duong",
+      "ownership_group": "Hoan My / Hanh Phuc",
+      "map_layer": "Hoan My asset",
+      "category": "Specialty-led hospital",
+      "specialty_tags": [
+        "O&G",
+        "Maternity",
+        "Pediatrics"
+      ],
+      "lat": 10.868413126199162,
+      "lng": 106.7145484819666,
+      "real_address": "18 Đại lộ Bình Dương, Phường Bình Hòa, TP. Hồ Chí Minh",
+      "address_hint": "18 Đại lộ Bình Dương, Phường Bình Hòa, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
+    },
+    {
+      "code": "H04",
+      "name": "Thuan My TDM Hospital",
+      "area": "Thu Dau Mot / Binh Duong",
+      "region": "Former Binh Duong",
+      "ownership_group": "Thuan My",
+      "map_layer": "Hoan My asset",
+      "category": "General hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.983657,
+      "lng": 106.643352,
+      "real_address": "152 Huỳnh Văn Cù, Phường Thủ Dầu Một, TP. Hồ Chí Minh",
+      "address_hint": "152 Huỳnh Văn Cù, Phường Thủ Dầu Một, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "H05",
+      "name": "Hoan My Binh Duong Hospital",
+      "area": "Binh Duong",
+      "region": "Former Binh Duong",
+      "ownership_group": "Hoan My",
+      "map_layer": "Hoan My asset",
+      "category": "Hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.718989,
+      "lng": 106.629009,
+      "real_address": "45 Hồ Văn Cống, Khu phố 4, Phường Chánh Hiệp, TP. Hồ Chí Minh",
+      "address_hint": "45 Hồ Văn Cống, Khu phố 4, Phường Chánh Hiệp, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "H06",
+      "name": "Thuan My Binh Duong",
+      "area": "Thu Dau Mot / Binh Duong",
+      "region": "Former Binh Duong",
+      "ownership_group": "Thuan My",
+      "map_layer": "Hoan My asset",
+      "category": "Hospital / facility",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.98671,
+      "lng": 106.65497,
+      "real_address": "28 Yersin Street, Phu Cuong Ward, Thu Dau Mot / Binh Duong area",
+      "address_hint": "28 Yersin Street, Phu Cuong Ward, Thu Dau Mot / Binh Duong area",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "C01",
+      "name": "Hanh Phuc Estella Clinic",
+      "area": "Thu Duc / An Phu - Estella Place",
+      "region": "Old HCMC",
+      "ownership_group": "Hoan My / Hanh Phuc",
+      "map_layer": "Hoan My asset",
+      "category": "Strategic outpatient clinic asset",
+      "specialty_tags": [
+        "Outpatient",
+        "Women & Children",
+        "Family care",
+        "Strategic asset"
+      ],
+      "lat": 10.80250,
+      "lng": 106.74650,
+      "real_address": "Tầng 5, Estella Place, 88 Song Hành, Phường An Phú, TP. Thủ Đức, TP. Hồ Chí Minh",
+      "address_hint": "Tầng 5, Estella Place, 88 Song Hành, Phường An Phú, TP. Thủ Đức, TP. Hồ Chí Minh",
+      "note": "Merged into Hoan My asset layer as a strategic outpatient clinic asset.",
+      "coordinate_confidence": "verified",
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
+    },
+    {
+      "code": "M01",
+      "name": "FV Hospital",
+      "area": "District 7 / Phu My Hung medical cluster",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "Premium international multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty",
+        "Premium",
+        "International care"
+      ],
+      "lat": 10.732434,
+      "lng": 106.717882,
+      "real_address": "6 Nguyễn Lương Bằng, Phường Tân Mỹ, TP. Hồ Chí Minh",
+      "address_hint": "6 Nguyễn Lương Bằng, Phường Tân Mỹ, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M02",
+      "name": "Vinmec Central Park International Hospital",
+      "area": "Binh Thanh / Vinhomes Central Park",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "Premium international multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty",
+        "Premium",
+        "International care"
+      ],
+      "lat": 10.794835,
+      "lng": 106.721743,
+      "real_address": "720A Điện Biên Phủ, Phường Thạnh Mỹ Tây, TP. Hồ Chí Minh",
+      "address_hint": "720A Điện Biên Phủ, Phường Thạnh Mỹ Tây, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M03",
+      "name": "Tam Anh General Hospital HCMC",
+      "area": "Tan Binh / West-central HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "High-tech multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty",
+        "High-tech"
+      ],
+      "lat": 10.807242,
+      "lng": 106.668435,
+      "real_address": "2B Phổ Quang, Phường Tân Sơn Hòa, TP. Hồ Chí Minh",
+      "address_hint": "2B Phổ Quang, Phường Tân Sơn Hòa, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M04",
+      "name": "American International Hospital - AIH",
+      "area": "Thu Duc / An Phu - An Khanh",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "Premium international multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty",
+        "Premium",
+        "International care"
+      ],
+      "lat": 10.798813,
+      "lng": 106.746995,
+      "real_address": "Số 6 đường Bắc Nam 3, lối vào từ 199 Nguyễn Hoàng, Phường Bình Trưng, TP. Hồ Chí Minh",
+      "address_hint": "Số 6 đường Bắc Nam 3, lối vào từ 199 Nguyễn Hoàng, Phường Bình Trưng, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M05",
+      "name": "City International Hospital - CIH",
+      "area": "Binh Tan / Hoa Lam Shangri-La medical zone",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "International multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty",
+        "International care"
+      ],
+      "lat": 10.964298,
+      "lng": 106.499995,
+      "real_address": "Số 3 Đường 17A, Phường An Lạc, TP. Hồ Chí Minh",
+      "address_hint": "Số 3 Đường 17A, Phường An Lạc, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M06",
+      "name": "Gia An 115 Hospital",
+      "area": "Binh Tan / Hoa Lam Shangri-La medical zone",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "Multi-specialty hospital",
+      "specialty_tags": [
+        "Stroke",
+        "Cardiac",
+        "Neurology",
+        "Multi-specialty"
+      ],
+      "lat": 10.740484,
+      "lng": 106.607657,
+      "real_address": "05 Đường số 17A, Phường Bình Trị Đông B, Quận Bình Tân, TP. Hồ Chí Minh",
+      "address_hint": "05 Đường số 17A, Phường Bình Trị Đông B, Quận Bình Tân, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M07",
+      "name": "Xuyen A General Hospital HCMC",
+      "area": "Cu Chi / Northwest HCMC gateway",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "Large private multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty",
+        "Emergency"
+      ],
+      "lat": 10.982367,
+      "lng": 106.500418,
+      "real_address": "Số 42 đường Phan Văn Khải, Ấp Chợ, Xã Củ Chi, TP. Hồ Chí Minh",
+      "address_hint": "Số 42 đường Phan Văn Khải, Ấp Chợ, Xã Củ Chi, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M08",
+      "name": "An Sinh Hospital",
+      "area": "Phu Nhuan / Nguyen Van Troi corridor",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General hospital",
+      "specialty_tags": [
+        "General care",
+        "O&G",
+        "Maternity"
+      ],
+      "lat": 10.791274,
+      "lng": 106.678488,
+      "real_address": "10 Trần Huy Liệu, Phường Phú Nhuận, TP. Hồ Chí Minh",
+      "address_hint": "10 Trần Huy Liệu, Phường Phú Nhuận, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "T01",
+      "name": "Tam Tri Sai Gon General Hospital",
+      "area": "District 12 / Truong Chinh northwest gateway",
+      "region": "Old HCMC",
+      "ownership_group": "Tam Tri Healthcare Group",
+      "map_layer": "Tam Tri asset",
+      "category": "Private multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty",
+        "General care",
+        "O&G",
+        "Pediatrics",
+        "Emergency",
+        "Cardiology",
+        "Gastroenterology"
+      ],
+      "lat": 10.831663,
+      "lng": 106.621566,
+      "real_address": "171/3 Trường Chinh, Phường Đông Hưng Thuận, TP. Hồ Chí Minh",
+      "address_hint": "171/3 Trường Chinh, Phường Đông Hưng Thuận, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M09",
+      "name": "Van Hanh General Hospital",
+      "area": "District 10 / central-west HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General private hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.768031,
+      "lng": 106.674365,
+      "real_address": "781/B1-B3-B5 Lê Hồng Phong, Phường Hòa Hưng, TP. Hồ Chí Minh",
+      "address_hint": "781/B1-B3-B5 Lê Hồng Phong, Phường Hòa Hưng, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M10",
+      "name": "Tan Hung General Hospital",
+      "area": "District 7 / South HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General private hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.751844,
+      "lng": 106.712471,
+      "real_address": "871 Trần Xuân Soạn, Phường Tân Hưng, TP. Hồ Chí Minh",
+      "address_hint": "871 Trần Xuân Soạn, Phường Tân Hưng, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M11",
+      "name": "Quoc Anh General Hospital",
+      "area": "Binh Tan / West HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General private hospital",
+      "specialty_tags": [
+        "General care",
+        "Maternity"
+      ],
+      "lat": 10.954175,
+      "lng": 106.605731,
+      "real_address": "104-110 Đường số 54, Khu dân cư Tân Tạo, Phường Tân Tạo, TP. Hồ Chí Minh",
+      "address_hint": "104-110 Đường số 54, Khu dân cư Tân Tạo, Phường Tân Tạo, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M12",
+      "name": "Minh Anh International General Hospital",
+      "area": "Binh Tan / West HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General private hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.837888,
+      "lng": 106.745477,
+      "real_address": "36 Đường 1B, Phường An Lạc, TP. Hồ Chí Minh",
+      "address_hint": "36 Đường 1B, Phường An Lạc, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M13",
+      "name": "Hong Duc 3 General Hospital",
+      "area": "Go Vap / North HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General private hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.836293,
+      "lng": 106.664717,
+      "real_address": "32/2 Thống Nhất, Phường Gò Vấp, TP. Hồ Chí Minh",
+      "address_hint": "32/2 Thống Nhất, Phường Gò Vấp, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M14",
+      "name": "Hong Duc II General Hospital",
+      "area": "District 12 / Northwest HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General private hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.770008,
+      "lng": 106.671809,
+      "real_address": "259 đường An Phú Đông 03, KP19, Phường An Phú Đông, TP. Hồ Chí Minh",
+      "address_hint": "259 đường An Phú Đông 03, KP19, Phường An Phú Đông, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M15",
+      "name": "Gia Dinh General Hospital",
+      "area": "Binh Thanh / No Trang Long corridor",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "Private general hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 10.781971,
+      "lng": 106.693081,
+      "real_address": "425-427-429 Nơ Trang Long, Phường Bình Lợi Trung, TP. Hồ Chí Minh",
+      "address_hint": "425-427-429 Nơ Trang Long, Phường Bình Lợi Trung, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M16",
+      "name": "Nam Sai Gon International General Hospital",
+      "area": "Binh Chanh / South HCMC gateway",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "Private multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty",
+        "International care"
+      ],
+      "lat": 10.74445,
+      "lng": 106.71416,
+      "real_address": "Số 88, Đường số 8, Khu dân cư Trung Sơn, Xã Bình Hưng, TP. Hồ Chí Minh",
+      "address_hint": "Số 88, Đường số 8, Khu dân cư Trung Sơn, Xã Bình Hưng, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M17",
+      "name": "Becamex International Hospital",
+      "area": "Thuan An / Binh Duong industrial-healthcare pole",
+      "region": "Former Binh Duong",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "Large private multi-specialty hospital",
+      "specialty_tags": [
+        "Multi-specialty"
+      ],
+      "lat": 10.881295,
+      "lng": 106.698508,
+      "real_address": "681 Đại lộ Bình Dương, Phường Lái Thiêu, TP. Hồ Chí Minh",
+      "address_hint": "681 Đại lộ Bình Dương, Phường Lái Thiêu, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M18",
+      "name": "Columbia Asia Binh Duong International Hospital",
+      "area": "Thuan An / Binh Duong",
+      "region": "Former Binh Duong",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "International general hospital",
+      "specialty_tags": [
+        "General care",
+        "International care"
+      ],
+      "lat": 10.951201,
+      "lng": 106.707084,
+      "real_address": "Đường 22/12, Khu phố Hòa Lân, Phường Thuận Giao, Thuận An, Bình Dương",
+      "address_hint": "Đường 22/12, Khu phố Hòa Lân, Phường Thuận Giao, Thuận An, Bình Dương",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "M19",
+      "name": "My Phuoc General Hospital",
+      "area": "Ben Cat / My Phuoc industrial zone",
+      "region": "Former Binh Duong",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General private hospital",
+      "specialty_tags": [
+        "General care",
+        "Industrial workforce healthcare"
+      ],
+      "lat": 10.463558,
+      "lng": 106.324749,
+      "real_address": "Đường TC3, Khu phố An Phước, Phường Bến Cát, TP. Hồ Chí Minh",
+      "address_hint": "Đường TC3, Khu phố An Phước, Phường Bến Cát, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "M20",
+      "name": "Medic Binh Duong General Hospital",
+      "area": "Thu Dau Mot / Binh Duong",
+      "region": "Former Binh Duong",
+      "ownership_group": "Competitor",
+      "map_layer": "Private multi-specialty competitor",
+      "category": "General private hospital",
+      "specialty_tags": [
+        "General care"
+      ],
+      "lat": 11.199916,
+      "lng": 106.661041,
+      "real_address": "14A Nguyễn An Ninh, Phường Phú Cường, TP. Thủ Dầu Một, Bình Dương",
+      "address_hint": "14A Nguyễn An Ninh, Phường Phú Cường, TP. Thủ Dầu Một, Bình Dương",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "PCH01",
+      "name": "Phuong Nam Hospital",
+      "area": "District 7 / Phu My Hung medical cluster",
+      "region": "Old HCMC",
+      "ownership_group": "Phuong Chau Healthcare Group",
+      "map_layer": "Phuong Chau asset",
+      "category": "O&G / pediatrics / general medicine hospital",
+      "specialty_tags": [
+        "O&G",
+        "Maternity",
+        "Pediatrics",
+        "General medicine",
+        "IVF"
+      ],
+      "lat": 10.73449,
+      "lng": 106.71764,
+      "real_address": "2 Nguyễn Lương Bằng, Phường Tân Mỹ, TP. Hồ Chí Minh",
+      "address_hint": "2 Nguyễn Lương Bằng, Phường Tân Mỹ, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "S01",
+      "name": "Tam Duc Heart Hospital",
+      "area": "District 7 / Phu My Hung medical cluster",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private specialty competitor",
+      "category": "Cardiac specialty hospital",
+      "specialty_tags": [
+        "Cardiac",
+        "Cardiovascular"
+      ],
+      "lat": 10.724583,
+      "lng": 106.724207,
+      "real_address": "04 Nguyễn Lương Bằng, Phường Tân Mỹ, TP. Hồ Chí Minh",
+      "address_hint": "04 Nguyễn Lương Bằng, Phường Tân Mỹ, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "S02",
+      "name": "Sante Surgical Hospital",
+      "area": "Binh Thanh / central-east HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private specialty competitor",
+      "category": "Surgical / specialty-led hospital",
+      "specialty_tags": [
+        "Surgery",
+        "Orthopedic",
+        "Emergency"
+      ],
+      "lat": 10.816689,
+      "lng": 106.711367,
+      "real_address": "11A Đinh Bộ Lĩnh, Phường Bình Thạnh, TP. Hồ Chí Minh",
+      "address_hint": "11A Đinh Bộ Lĩnh, Phường Bình Thạnh, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "S03",
+      "name": "Saigon ITO Trauma & Orthopedic Hospital",
+      "area": "Tan Binh / West-central HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private specialty competitor",
+      "category": "Orthopedic / trauma hospital",
+      "specialty_tags": [
+        "Orthopedic",
+        "Trauma",
+        "Rehabilitation"
+      ],
+      "lat": 10.795976,
+      "lng": 106.665982,
+      "real_address": "305 Lê Văn Sỹ, Phường Tân Sơn Hòa, TP. Hồ Chí Minh",
+      "address_hint": "305 Lê Văn Sỹ, Phường Tân Sơn Hòa, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "S04",
+      "name": "Saigon ITO Phu Nhuan Hospital",
+      "area": "Phu Nhuan / central HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private specialty competitor",
+      "category": "Orthopedic / trauma hospital",
+      "specialty_tags": [
+        "Orthopedic",
+        "Trauma",
+        "Rehabilitation"
+      ],
+      "lat": 10.797713,
+      "lng": 106.67434,
+      "real_address": "140C Nguyễn Trọng Tuyển, Phường Phú Nhuận, TP. Hồ Chí Minh",
+      "address_hint": "140C Nguyễn Trọng Tuyển, Phường Phú Nhuận, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "S05",
+      "name": "Saigon International Obstetrics & Gynecology Hospital",
+      "area": "District 1 / central HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private specialty competitor",
+      "category": "O&G / maternity hospital",
+      "specialty_tags": [
+        "O&G",
+        "Maternity"
+      ],
+      "lat": 10.767851,
+      "lng": 106.686427,
+      "real_address": "63 Bùi Thị Xuân, Phường Bến Thành, TP. Hồ Chí Minh",
+      "address_hint": "63 Bùi Thị Xuân, Phường Bến Thành, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "address-only"
+    },
+    {
+      "code": "S06",
+      "name": "Mekong Obstetrics & Gynecology Hospital",
+      "area": "Tan Binh / West-central HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private specialty competitor",
+      "category": "O&G / maternity hospital",
+      "specialty_tags": [
+        "O&G",
+        "Maternity"
+      ],
+      "lat": 10.80006426073274,
+      "lng": 106.66756320656414,
+      "real_address": "243-243A-243B Hoàng Văn Thụ, Phường Tân Sơn Hòa, TP. Hồ Chí Minh",
+      "address_hint": "243-243A-243B Hoàng Văn Thụ, Phường Tân Sơn Hòa, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
+    },
+    {
+      "code": "S07",
+      "name": "My Duc Hospital",
+      "area": "Tan Binh / West-central HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private specialty competitor",
+      "category": "O&G / fertility hospital",
+      "specialty_tags": [
+        "O&G",
+        "Fertility",
+        "IVF"
+      ],
+      "lat": 10.799968,
+      "lng": 106.641596,
+      "real_address": "4 Núi Thành, Phường Tân Bình, TP. Hồ Chí Minh",
+      "address_hint": "4 Núi Thành, Phường Tân Bình, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    },
+    {
+      "code": "S08",
+      "name": "My Duc Phu Nhuan Hospital",
+      "area": "Phu Nhuan / central HCMC",
+      "region": "Old HCMC",
+      "ownership_group": "Competitor",
+      "map_layer": "Private specialty competitor",
+      "category": "O&G / fertility hospital",
+      "specialty_tags": [
+        "O&G",
+        "Fertility",
+        "IVF"
+      ],
+      "lat": 10.802312,
+      "lng": 106.675981,
+      "real_address": "43R/2-4 Hồ Văn Huê, Phường Đức Nhuận, TP. Hồ Chí Minh",
+      "address_hint": "43R/2-4 Hồ Văn Huê, Phường Đức Nhuận, TP. Hồ Chí Minh",
+      "coordinate_confidence": "verified",
+      "geocode_source": "locationiq",
+      "geocode_match_level": "name+address"
+    }
+  ],
+  "closed_or_removed_facilities": [
+    {
+      "code": "M21",
+      "name": "Vu Anh International General Hospital",
+      "status": "closed_removed_from_active_map",
+      "reason": "User confirmed the facility has closed.",
+      "previous_area": "Go Vap / North HCMC",
+      "previous_address": "15-16 Phan Văn Trị, Gò Vấp, TP. Hồ Chí Minh"
+    },
+    {
+      "code": "S09",
+      "name": "My Duc Tan Binh Hospital",
+      "status": "duplicate_removed_from_active_map",
+      "reason": "User confirmed S09 duplicates S07 My Duc Hospital / Tan Binh location.",
+      "merged_into": "S07",
+      "previous_area": "Tan Binh / West-central HCMC",
+      "previous_address": "4 Núi Thành, Phường Tân Bình, TP. Hồ Chí Minh"
+    }
+  ]
+}
