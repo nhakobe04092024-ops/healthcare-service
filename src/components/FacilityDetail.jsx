@@ -1,4 +1,5 @@
 import React from 'react';
+import SimpleBar from 'simplebar-react';
 
 function Row({ label, value }) {
   return (
@@ -27,7 +28,7 @@ export default function FacilityDetail({ facility, markerStyle, onClose }) {
         </button>
       </header>
 
-      <div className="detail-scroll">
+      <SimpleBar className="detail-scroll" autoHide={false} forceVisible="y">
         <dl className="detail-grid">
           <Row label="Code" value={facility.code} />
           <Row label="Facility" value={facility.name} />
@@ -59,7 +60,7 @@ export default function FacilityDetail({ facility, markerStyle, onClose }) {
             <p>{facility.note}</p>
           </div>
         )}
-      </div>
+      </SimpleBar>
     </aside>
   );
 }

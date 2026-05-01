@@ -43,6 +43,7 @@ h1, h2, h3 { margin: 0; }
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
+  height: 100dvh; /* Mobile-friendly — accounts for retractable URL bars */
   min-height: 0;
 }
 
@@ -134,11 +135,46 @@ h1, h2, h3 { margin: 0; }
 .sidebar {
   background: var(--bg);
   border-right: 1px solid var(--border);
-  overflow-y: auto;
-  padding: 16px;
+  overflow: hidden; /* SimpleBar handles scrolling */
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-scroll {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+}
+.sidebar-content {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  padding: 16px;
+}
+
+/* -------- SimpleBar custom scrollbar (always visible, desktop + mobile) -------- */
+
+.simplebar-track.simplebar-vertical {
+  width: 10px;
+  background: rgba(11, 46, 92, 0.04);
+  border-radius: 0;
+}
+.simplebar-scrollbar::before {
+  background: var(--border-strong);
+  border-radius: 999px;
+  opacity: 1 !important; /* SimpleBar fades by default; we want always-on */
+  left: 2px;
+  right: 2px;
+}
+.simplebar-scrollbar.simplebar-visible::before {
+  opacity: 1 !important;
+}
+.simplebar-track:hover .simplebar-scrollbar::before,
+.simplebar-scrollbar:hover::before {
+  background: var(--text-soft);
+}
+/* Inside white detail panel, lighten the track */
+.detail-scroll .simplebar-track.simplebar-vertical {
+  background: rgba(11, 46, 92, 0.05);
 }
 
 /* -------- Panels -------- */
@@ -247,6 +283,7 @@ h1, h2, h3 { margin: 0; }
   margin: 0;
   accent-color: var(--accent);
   width: 14px; height: 14px;
+  flex-shrink: 0;
 }
 .swatch {
   width: 12px; height: 12px;
@@ -254,7 +291,14 @@ h1, h2, h3 { margin: 0; }
   flex-shrink: 0;
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
 }
-.filter-text { font-size: 13px; color: var(--text); }
+.filter-text {
+  font-size: 13px;
+  color: var(--text);
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+  line-height: 1.35;
+}
 
 /* -------- Summary panel -------- */
 .summary-highlights {
@@ -326,6 +370,12 @@ h1, h2, h3 { margin: 0; }
   gap: 12px;
   font-size: 13px;
   color: var(--text);
+  word-break: break-word;
+  line-height: 1.35;
+}
+.legend-text {
+  flex: 1;
+  min-width: 0;
 }
 .legend-swatch {
   --c: #888;
@@ -544,7 +594,6 @@ h1, h2, h3 { margin: 0; }
 .icon-btn:hover { background: var(--bg); color: var(--text); }
 
 .detail-scroll {
-  overflow-y: auto;
   flex: 1;
   min-height: 0;
 }
@@ -629,14 +678,22 @@ h1, h2, h3 { margin: 0; }
   .sidebar {
     position: absolute;
     inset: 0;
-    z-index: 30;
+    /* Above every Leaflet pane (markers ~600, popups ~700, controls ~1000) */
+    z-index: 2000;
     transform: translateX(-100%);
     transition: transform 0.25s ease;
     border-right: none;
+    padding-bottom: 80px; /* extra breathing room so legend isn't clipped */
+    background: var(--bg); /* solid backdrop so map can't bleed through */
   }
   .sidebar.is-open {
     transform: translateX(0);
     box-shadow: var(--shadow-md);
+  }
+  /* Hide the map entirely while the mobile sidebar is open — saves CPU,
+     prevents any residual stacking quirks on iOS Safari. */
+  .sidebar.is-open ~ .map-container {
+    visibility: hidden;
   }
   .detail-panel {
     top: auto;

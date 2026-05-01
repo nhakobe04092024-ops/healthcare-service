@@ -1,4 +1,6 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 import data from './data/hcmc_healthcare_facilities_interactive_map.json';
 import MapView from './components/MapView.jsx';
 import FilterPanel from './components/FilterPanel.jsx';
@@ -84,21 +86,25 @@ export default function App() {
 
       <div className="app-body">
         <aside className={`sidebar${sidebarOpen ? ' is-open' : ''}`}>
-          <FilterPanel
-            categories={CATEGORIES}
-            regions={REGIONS}
-            activeCategories={activeCategories}
-            activeRegions={activeRegions}
-            onToggleCategory={toggleCategory}
-            onToggleRegion={toggleRegion}
-            searchQuery={searchQuery}
-            onSearchChange={setSearchQuery}
-            markerStyles={data.marker_styles}
-            visibleCount={filteredFacilities.length}
-            totalCount={data.facilities.length}
-          />
-          <SummaryPanel summary={data.summary} />
-          <Legend markerStyles={data.marker_styles} />
+          <SimpleBar className="sidebar-scroll" autoHide={false} forceVisible="y">
+            <div className="sidebar-content">
+              <FilterPanel
+                categories={CATEGORIES}
+                regions={REGIONS}
+                activeCategories={activeCategories}
+                activeRegions={activeRegions}
+                onToggleCategory={toggleCategory}
+                onToggleRegion={toggleRegion}
+                searchQuery={searchQuery}
+                onSearchChange={setSearchQuery}
+                markerStyles={data.marker_styles}
+                visibleCount={filteredFacilities.length}
+                totalCount={data.facilities.length}
+              />
+              <SummaryPanel summary={data.summary} />
+              <Legend markerStyles={data.marker_styles} />
+            </div>
+          </SimpleBar>
         </aside>
 
         <main className="map-container">
