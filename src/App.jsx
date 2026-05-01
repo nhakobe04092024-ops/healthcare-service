@@ -61,11 +61,6 @@ export default function App() {
     setSelectedFacility(facility);
   }, []);
 
-  const findC01 = useCallback(() => {
-    const c01 = data.facilities.find((f) => f.code === 'C01');
-    if (c01) flyToFacility(c01, 16);
-  }, [flyToFacility]);
-
   return (
     <div className="app-shell">
       <header className="app-header">
@@ -77,9 +72,6 @@ export default function App() {
           </div>
         </div>
         <div className="header-actions">
-          <button className="cta-btn" onClick={findC01}>
-            <span className="cta-dot" /> Find C01 Estella Clinic
-          </button>
           <button
             className="ghost-btn mobile-only"
             onClick={() => setSidebarOpen((o) => !o)}
