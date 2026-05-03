@@ -138,12 +138,12 @@
       "specialty_tags": [
         "General care"
       ],
-      "lat": 10.718989,
-      "lng": 106.629009,
+      "lat": 11.004396597776289,
+      "lng": 106.64240426875796,
       "real_address": "45 Hồ Văn Cống, Khu phố 4, Phường Chánh Hiệp, TP. Hồ Chí Minh",
       "address_hint": "45 Hồ Văn Cống, Khu phố 4, Phường Chánh Hiệp, TP. Hồ Chí Minh",
       "coordinate_confidence": "verified",
-      "geocode_source": "locationiq",
+      "geocode_source": "manual_google_maps",
       "geocode_match_level": "address-only"
     },
     {
@@ -283,13 +283,13 @@
         "Multi-specialty",
         "International care"
       ],
-      "lat": 10.964298,
-      "lng": 106.499995,
+      "lat": 10.741060616626322,
+      "lng": 106.6091103784029,
       "real_address": "Số 3 Đường 17A, Phường An Lạc, TP. Hồ Chí Minh",
       "address_hint": "Số 3 Đường 17A, Phường An Lạc, TP. Hồ Chí Minh",
       "coordinate_confidence": "verified",
-      "geocode_source": "locationiq",
-      "geocode_match_level": "name+address"
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
     },
     {
       "code": "M06",
@@ -325,13 +325,13 @@
         "Multi-specialty",
         "Emergency"
       ],
-      "lat": 10.982367,
-      "lng": 106.500418,
+      "lat": 10.928303986896438,
+      "lng": 106.55885655711333,
       "real_address": "Số 42 đường Phan Văn Khải, Ấp Chợ, Xã Củ Chi, TP. Hồ Chí Minh",
       "address_hint": "Số 42 đường Phan Văn Khải, Ấp Chợ, Xã Củ Chi, TP. Hồ Chí Minh",
       "coordinate_confidence": "verified",
-      "geocode_source": "locationiq",
-      "geocode_match_level": "name+address"
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
     },
     {
       "code": "M08",
@@ -429,13 +429,13 @@
         "General care",
         "Maternity"
       ],
-      "lat": 10.954175,
-      "lng": 106.605731,
+      "lat": 10.753990525884113,
+      "lng": 106.59547058200005,
       "real_address": "104-110 Đường số 54, Khu dân cư Tân Tạo, Phường Tân Tạo, TP. Hồ Chí Minh",
       "address_hint": "104-110 Đường số 54, Khu dân cư Tân Tạo, Phường Tân Tạo, TP. Hồ Chí Minh",
       "coordinate_confidence": "verified",
-      "geocode_source": "locationiq",
-      "geocode_match_level": "name+address"
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
     },
     {
       "code": "M12",
@@ -448,13 +448,13 @@
       "specialty_tags": [
         "General care"
       ],
-      "lat": 10.837888,
-      "lng": 106.745477,
+      "lat": 10.747582773842783,
+      "lng": 106.6149824508759,
       "real_address": "36 Đường 1B, Phường An Lạc, TP. Hồ Chí Minh",
       "address_hint": "36 Đường 1B, Phường An Lạc, TP. Hồ Chí Minh",
       "coordinate_confidence": "verified",
-      "geocode_source": "locationiq",
-      "geocode_match_level": "name+address"
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
     },
     {
       "code": "M13",
@@ -486,12 +486,12 @@
       "specialty_tags": [
         "General care"
       ],
-      "lat": 10.770008,
-      "lng": 106.671809,
+      "lat": 10.853452406196334,
+      "lng": 106.70428206860217,
       "real_address": "259 đường An Phú Đông 03, KP19, Phường An Phú Đông, TP. Hồ Chí Minh",
       "address_hint": "259 đường An Phú Đông 03, KP19, Phường An Phú Đông, TP. Hồ Chí Minh",
       "coordinate_confidence": "verified",
-      "geocode_source": "locationiq",
+      "geocode_source": "manual_google_maps",
       "geocode_match_level": "name+address"
     },
     {
@@ -584,13 +584,13 @@
         "General care",
         "Industrial workforce healthcare"
       ],
-      "lat": 10.463558,
-      "lng": 106.324749,
+      "lat": 11.142073051099516,
+      "lng": 106.61288024348802,
       "real_address": "Đường TC3, Khu phố An Phước, Phường Bến Cát, TP. Hồ Chí Minh",
       "address_hint": "Đường TC3, Khu phố An Phước, Phường Bến Cát, TP. Hồ Chí Minh",
       "coordinate_confidence": "verified",
-      "geocode_source": "locationiq",
-      "geocode_match_level": "address-only"
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
     },
     {
       "code": "M20",
