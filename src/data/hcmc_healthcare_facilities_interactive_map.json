@@ -505,13 +505,13 @@
       "specialty_tags": [
         "General care"
       ],
-      "lat": 10.781971,
-      "lng": 106.693081,
-      "real_address": "425-427-429 Nơ Trang Long, Phường Bình Lợi Trung, TP. Hồ Chí Minh",
-      "address_hint": "425-427-429 Nơ Trang Long, Phường Bình Lợi Trung, TP. Hồ Chí Minh",
+      "lat": 10.820941057273528,
+      "lng": 106.70492157019514,
+      "real_address": "425-427-429 Nơ Trang Long, Phường 13, Quận Bình Thạnh, TP. Hồ Chí Minh",
+      "address_hint": "425-427-429 Nơ Trang Long, Phường 13, Quận Bình Thạnh, TP. Hồ Chí Minh",
       "coordinate_confidence": "verified",
-      "geocode_source": "locationiq",
-      "geocode_match_level": "address-only"
+      "geocode_source": "manual_google_maps",
+      "geocode_match_level": "manual_lookup"
     },
     {
       "code": "M16",
